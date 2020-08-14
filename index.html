@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>echarts-data-visualization</title>
+    <link rel="stylesheet" href="./src/styles/index.css">
+</head>
+<body>
+    <!-- 头部内容 -->
+    <header>
+        <h1>数据可视化</h1>
+        <section id="now_time"></section>
+    </header>
+    <!-- 主要内容 -->
+    <main class="main_box">
+        <!-- 第一列 -->
+        <section class="column">
+            <!-- bar -->
+            <section class="panel bar">
+                <h2>柱形图</h2>
+                <div class="chart" id="bar"></div>
+                <div class="panel_footer"></div>
+            </section>
+            <!-- line -->
+            <section class="panel line"></section>
+            <!-- pie -->
+            <section class="panel pie"></section>
+        </section>
+        <!-- 第二列 -->
+        <section class="column">
+            222222
+        </section>
+        <!-- 第三列 -->
+        <section class="column">
+            33
+        </section>
+    </main>
+    <!-- 引入脚本JS -->
+    <!-- 自适应布局flexible.js https://github.com/amfe/lib-flexible -->
+    <script src="./src/js/flexible/flexible.js"></script>
+    <!-- 引入jQuery 方便操作DOM元素 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 引入Echarts图表插件 暂时直接通过CDN的方式 -->
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.0.0-alpha.1/dist/echarts.min.js"></script>
+    <!-- <script src="./src/js/echarts.min.js"></script> -->
+    
+    <!-- 核心脚本 -->
+    <script src="./src/js/index.js"></script>
+    <!-- 引入工具函数 -->
+    <script src="./src/utils/index.js"></script>
+    <!--  -->
+    <script >
+        let timerId = null
+        timerId = setInterval(time,1000) // 1s 运行
+        function time(){
+            // 清除定时器
+            clearInterval(timerId)
+            let date = new Date()
+            let year = date.getFullYear() // 年
+            let m = date.getMonth() +1
+            let day = date.getDay()
+            let h = date.getHours()
+            let min = date.getMinutes()
+            let s = date.getSeconds()
+            document.querySelector('#now_time').innerHTML = `
+            当前时间是${year}年${m}月${day}日-${h}时${min}分${s}秒
+            `
+            timerId = setInterval(time,1000)
+        }
+
+    </script>
+</body>
+</html>
