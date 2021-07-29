@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@jiaminghi/data-view': ^2.10.0
   '@vue/cli-plugin-babel': ~4.5.0
   '@vue/cli-plugin-eslint': ~4.5.0
   '@vue/cli-plugin-router': ~4.5.0
@@ -25,6 +26,7 @@ specifiers:
   vuex: ^3.4.0
 
 dependencies:
+  '@jiaminghi/data-view': registry.nlark.com/@jiaminghi/data-view/2.10.0
   core-js: registry.nlark.com/core-js/3.15.2
   echarts: registry.nlark.com/echarts/5.1.2
   glob: registry.nlark.com/glob/7.1.7
@@ -5421,7 +5423,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: registry.nlark.com/regenerator-runtime/0.13.9
-    dev: true
 
   registry.nlark.com/@babel/template/7.14.5:
     resolution: {integrity: sha1-qbydizM1T/blWpxg0RCSAKaJdPQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@babel/template/download/@babel/template-7.14.5.tgz}
@@ -5492,6 +5493,59 @@ packages:
       postcss: registry.nlark.com/postcss/7.0.36
       webpack: registry.nlark.com/webpack/4.46.0
     dev: true
+
+  registry.nlark.com/@jiaminghi/bezier-curve/0.0.9:
+    resolution: {integrity: sha1-UZasqTyLBhphK0w+q87flJDO9u4=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@jiaminghi/bezier-curve/download/@jiaminghi/bezier-curve-0.0.9.tgz}
+    name: '@jiaminghi/bezier-curve'
+    version: 0.0.9
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.8
+    dev: false
+
+  registry.nlark.com/@jiaminghi/c-render/0.4.3:
+    resolution: {integrity: sha1-mC69j3G0Q7uVB4NCJ4NJc+vZttg=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@jiaminghi/c-render/download/@jiaminghi/c-render-0.4.3.tgz}
+    name: '@jiaminghi/c-render'
+    version: 0.4.3
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.8
+      '@jiaminghi/bezier-curve': registry.nlark.com/@jiaminghi/bezier-curve/0.0.9
+      '@jiaminghi/color': registry.nlark.com/@jiaminghi/color/0.1.1
+      '@jiaminghi/transition': registry.nlark.com/@jiaminghi/transition/1.1.11
+    dev: false
+
+  registry.nlark.com/@jiaminghi/charts/0.2.18:
+    resolution: {integrity: sha1-Y97ZUgB4n8Gh/QS3/Z5W9Y0i2Q8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@jiaminghi/charts/download/@jiaminghi/charts-0.2.18.tgz}
+    name: '@jiaminghi/charts'
+    version: 0.2.18
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.8
+      '@jiaminghi/c-render': registry.nlark.com/@jiaminghi/c-render/0.4.3
+    dev: false
+
+  registry.nlark.com/@jiaminghi/color/0.1.1:
+    resolution: {integrity: sha1-vd+QEt/OaYLTgpqYP/65Hundp7Y=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@jiaminghi/color/download/@jiaminghi/color-0.1.1.tgz}
+    name: '@jiaminghi/color'
+    version: 0.1.1
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.8
+    dev: false
+
+  registry.nlark.com/@jiaminghi/data-view/2.10.0:
+    resolution: {integrity: sha1-IUbY/HG58kvoCCOMoFDdt6TIlJ8=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@jiaminghi/data-view/download/@jiaminghi/data-view-2.10.0.tgz}
+    name: '@jiaminghi/data-view'
+    version: 2.10.0
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.8
+      '@jiaminghi/charts': registry.nlark.com/@jiaminghi/charts/0.2.18
+    dev: false
+
+  registry.nlark.com/@jiaminghi/transition/1.1.11:
+    resolution: {integrity: sha1-V22K8JJDSzQgHrpersx53TPIrYw=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@jiaminghi/transition/download/@jiaminghi/transition-1.1.11.tgz}
+    name: '@jiaminghi/transition'
+    version: 1.1.11
+    dependencies:
+      '@babel/runtime': registry.nlark.com/@babel/runtime/7.14.8
+    dev: false
 
   registry.nlark.com/@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha1-dhnC6yGyVIP20WdUi0z9WnSIw9U=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/@nodelib/fs.scandir/download/@nodelib/fs.scandir-2.1.5.tgz}
@@ -10082,7 +10136,6 @@ packages:
     resolution: {integrity: sha1-iSV0Kpj/2QgUmI11Zq0wyjsmO1I=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/regenerator-runtime/download/regenerator-runtime-0.13.9.tgz}
     name: regenerator-runtime
     version: 0.13.9
-    dev: true
 
   registry.nlark.com/regenerator-transform/0.14.5:
     resolution: {integrity: sha1-yY2hVGg2ccnE3LFuznNlF+G3/rQ=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/regenerator-transform/download/regenerator-transform-0.14.5.tgz}
