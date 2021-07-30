@@ -1,16 +1,46 @@
 @mixin text-ellipsis() {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
 
-@mixin  clearfix {
-    &::after {
-      content: "";
-      display: table;
-      height: 0;
-      line-height: 0;
-      visibility: hidden;
-      clear: both;
-    }
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
   }
+}
+
+@mixin panel($w, $h) {
+  position: relative;
+  height: $h;
+  width: $w;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0 0.1875rem 0.5rem;
+  margin-bottom: 0.1875rem;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-left: 2px solid #02a6b5;
+  }
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #02a6b5;
+    border-right: 2px solid #02a6b5;
+  }
+}

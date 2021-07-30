@@ -1,6 +1,6 @@
 <template>
   <div
-    id="domId"
+    :id="domId"
     :class="className"
     :style="{ height: height, width: width }"
   ></div>
@@ -9,16 +9,16 @@
 <script>
 import resizeMixin from '@/mixins/resizeMixin';
 export default {
-  name: 'LineChartComp',
+  name: 'BaseChartComp',
   mixins: [resizeMixin],
   props: {
     className: {
       type: String,
-      default: 'line-chart',
+      default: 'chart',
     },
     domId: {
       type: String,
-      default: 'line-chart',
+      default: 'chart',
     },
     width: {
       type: String,
@@ -28,7 +28,7 @@ export default {
       type: String,
       default: '100%',
     },
-    opts: {
+    options: {
       type: Object,
       default: () => ({}),
     },
@@ -39,21 +39,24 @@ export default {
     };
   },
   watch: {
-    opts: {
+    options: {
       handler() {
         if (this.chart) {
-          this.chart.setOption(this.opts, true);
+          this.chart.setOption(this.options, true);
         }
       },
       deep: true,
     },
   },
   mounted() {
-    this.init(); // 初始化操作
-    this.chart.setOption(this.opts, true);
+    // this.init(); // 初始化操作
+    this.initChart();
   },
   methods: {
-    init() {},
+    initChart() {
+      this.chart = this.$ec.init(this.$el);
+      this.chart.setOption(this.options, true);
+    },
   },
 };
 </script>

@@ -1,24 +1,17 @@
 # vdv
 
-## Project setup
-```
-yarn install
+<h3>基于 datav + echarts + vue + flexible + rem + sass 大屏可视化方案</h3>
+
+## setup
+
+```bash
+pnpm run  dev
 ```
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+## vue.config.js
 
-### Compiles and minifies for production
+```js
+module.exports = {
+  pages: pages,
+};
 ```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

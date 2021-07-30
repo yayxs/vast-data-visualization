@@ -1,0 +1,17 @@
+.df {
+  display: flex;
+}
+
+.jc-sb {
+  display: flex;
+  justify-content: space-between;
+}
+.fd-c {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
