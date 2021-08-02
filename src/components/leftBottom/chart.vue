@@ -1,16 +1,18 @@
 <template>
-  <BaseChartComp
-    :options="options"
-    id="rightTop"
-    height="2.75rem"
-    width="2.75rem"
-  />
+  <div>
+    <BaseChartComp
+      :options="options"
+      id="leftTop"
+      height="2.75rem"
+      width="3.25rem"
+    />
+  </div>
 </template>
 
 <script>
 import BaseChartComp from '../BaseChartComp.vue';
 export default {
-  name: 'RightTopChart',
+  name: 'LeftBottomChart',
   components: {
     BaseChartComp,
   },
@@ -29,18 +31,15 @@ export default {
     cdata: {
       handler(newData) {
         this.options = {
-          // 紫色 红色 蓝色 绿色
-          // color: ['#825df1', '#d44648', '#4b9dfa', '#21bad6'],
-          color: ['#4b9dfa', '#21bad6', '#825df1', '#d44648', '#e1b720'],
+          color: ['#21bad6', '#3488db'],
           tooltip: {
             trigger: 'item',
           },
-          selectedOffset: 10,
+          // selectedOffset: '1',
           // legend: {
           //   top: '5%',
           //   left: 'center',
           // },
-          // top: 'middle',
           series: [
             {
               // name: '引导成功率',
@@ -79,10 +78,8 @@ export default {
                 // color: '#21bad6',
                 // borderJoin: 'round',
                 // borderColor: '#000',
-                // borderRadius: 10,
+                borderRadius: 10,
                 // borderRadius: ['20%', '50%'],
-                borderWidth: 5,
-                borderColor: '#060711',
               },
               data: newData.seriesData,
             },
@@ -95,12 +92,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-#rightTop {
-  background-image: url('../../assets/rigitTop.png');
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: center;
-}
-</style>

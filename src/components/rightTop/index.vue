@@ -9,8 +9,13 @@ export default {
   data() {
     return {
       cdata: {
-        xAxisData: ['0-7H', '7-9H', '9-12H', '12-17H', '17-19H', '19-24H'],
-        seriesData: [120, 200, 150, 80, 70, 110],
+        seriesData: [
+          { value: 1048, name: '无卡' },
+          { value: 735, name: '拆卸' },
+          { value: 580, name: '软件拒绝' },
+          { value: 484, name: 'PC通信异常' },
+          { value: 300, name: 'DSRC异常' },
+        ],
       },
     };
   },

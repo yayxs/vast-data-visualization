@@ -36,13 +36,18 @@
               <LeftTop class="left" />
               <div class="right"></div>
             </div>
+            <div class="box-container">
+              <LeftBottom class="left" />
+              <div class="right"></div>
+            </div>
           </div>
           <!-- 第二行 -->
           <div class="sec-col"></div>
           <!-- 第三行 -->
           <div class="th-col df fd-c">
-            <div class="box-container center">
-              <!-- <RightBottom /> -->
+            <div class="box-container">
+              <RightTop class="left" />
+              <div class="right"></div>
             </div>
             <div class="box-container">
               <!-- <RightBottom /> -->
@@ -59,13 +64,16 @@
 <script>
 import { formatTime } from '@/utils';
 import LeftTop from '@/components/leftTop';
+import LeftBottom from '@/components/leftBottom';
 import RightBottom from '@/components/rightBottom';
-
+import RightTop from '@/components/rightTop';
 export default {
   name: 'Index',
   components: {
     LeftTop,
+    LeftBottom,
     RightBottom,
+    RightTop,
   },
   data() {
     return {
