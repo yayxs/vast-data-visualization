@@ -16,11 +16,13 @@ specifiers:
   eslint-plugin-prettier: ^3.3.1
   eslint-plugin-vue: ^6.2.2
   glob: ^7.1.7
+  highcharts: ^9.1.2
   lint-staged: ^9.5.0
   prettier: ^2.2.1
   sass: ^1.26.5
   sass-loader: ^8.0.2
   vue: ^2.6.11
+  vue-highcharts: ^0.2.0
   vue-router: ^3.2.0
   vue-template-compiler: ^2.6.11
   vuex: ^3.4.0
@@ -30,7 +32,9 @@ dependencies:
   core-js: registry.nlark.com/core-js/3.15.2
   echarts: registry.nlark.com/echarts/5.1.2
   glob: registry.nlark.com/glob/7.1.7
+  highcharts: registry.nlark.com/highcharts/9.1.2
   vue: registry.nlark.com/vue/2.6.14
+  vue-highcharts: registry.nlark.com/vue-highcharts/0.2.0_highcharts@9.1.2+vue@2.6.14
   vue-router: registry.nlark.com/vue-router/3.5.2
   vuex: registry.nlark.com/vuex/3.6.2_vue@2.6.14
 
@@ -6389,7 +6393,7 @@ packages:
     dev: true
 
   registry.nlark.com/ansi-styles/4.3.0:
-    resolution: {integrity: sha1-7dgDYornHATIWuegkG7a00tkiTc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/ansi-styles/download/ansi-styles-4.3.0.tgz}
+    resolution: {integrity: sha1-7dgDYornHATIWuegkG7a00tkiTc=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/ansi-styles/download/ansi-styles-4.3.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fansi-styles%2Fdownload%2Fansi-styles-4.3.0.tgz}
     name: ansi-styles
     version: 4.3.0
     engines: {node: '>=8'}
@@ -6807,7 +6811,7 @@ packages:
     dev: true
 
   registry.nlark.com/chalk/4.1.1:
-    resolution: {integrity: sha1-yAs/qyi/Y3HmhjMl7uZ+YYt35q0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/chalk/download/chalk-4.1.1.tgz?cache=0&sync_timestamp=1624637299541&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fchalk%2Fdownload%2Fchalk-4.1.1.tgz}
+    resolution: {integrity: sha1-yAs/qyi/Y3HmhjMl7uZ+YYt35q0=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/chalk/download/chalk-4.1.1.tgz?cache=0&sync_timestamp=1627658723294&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fchalk%2Fdownload%2Fchalk-4.1.1.tgz}
     name: chalk
     version: 4.1.1
     engines: {node: '>=10'}
@@ -8298,6 +8302,12 @@ packages:
     name: hex-color-regex
     version: 1.1.0
     dev: true
+
+  registry.nlark.com/highcharts/9.1.2:
+    resolution: {integrity: sha1-ybFTkKEKyydKlB0qpbwFwIiWRtk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/highcharts/download/highcharts-9.1.2.tgz}
+    name: highcharts
+    version: 9.1.2
+    dev: false
 
   registry.nlark.com/highlight.js/10.7.3:
     resolution: {integrity: sha1-aXJy45kTVuQMPKxWanTu9oF1ZTE=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/highlight.js/download/highlight.js-10.7.3.tgz?cache=0&sync_timestamp=1625835959735&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fhighlight.js%2Fdownload%2Fhighlight.js-10.7.3.tgz}
@@ -10686,7 +10696,7 @@ packages:
     dev: true
 
   registry.nlark.com/supports-color/7.2.0:
-    resolution: {integrity: sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/supports-color/download/supports-color-7.2.0.tgz?cache=0&sync_timestamp=1626703508574&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fsupports-color%2Fdownload%2Fsupports-color-7.2.0.tgz}
+    resolution: {integrity: sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/supports-color/download/supports-color-7.2.0.tgz?cache=0&sync_timestamp=1626703851112&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fsupports-color%2Fdownload%2Fsupports-color-7.2.0.tgz}
     name: supports-color
     version: 7.2.0
     engines: {node: '>=8'}
@@ -11122,6 +11132,19 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  registry.nlark.com/vue-highcharts/0.2.0_highcharts@9.1.2+vue@2.6.14:
+    resolution: {integrity: sha1-k3VLou4ZnzxQYgCYfh3HTprck9k=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/vue-highcharts/download/vue-highcharts-0.2.0.tgz}
+    id: registry.nlark.com/vue-highcharts/0.2.0
+    name: vue-highcharts
+    version: 0.2.0
+    peerDependencies:
+      highcharts: '>=4.2.0'
+      vue: '>=3'
+    dependencies:
+      highcharts: registry.nlark.com/highcharts/9.1.2
+      vue: registry.nlark.com/vue/2.6.14
+    dev: false
 
   registry.nlark.com/vue-loader/15.9.6_679359cdb69c218f2f8f476b2ba08796:
     resolution: {integrity: sha1-9Lua4gw6g3CvPs8JuBJtOP/ba4s=, registry: https://registry.npm.taobao.org/, tarball: https://registry.nlark.com/vue-loader/download/vue-loader-15.9.6.tgz}

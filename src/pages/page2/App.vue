@@ -1,26 +1,30 @@
 <template>
-  <div id="app">page2</div>
+  <div id="app">
+    <!-- <BigScreen> -->
+    <!-- <LeftCenter /> -->
+    <!-- </BigScreen> -->
+    <LeftBottomPlus />
+  </div>
 </template>
+
+<script>
+// import BigScreen from '@/components/BigScreen';
+// import LeftCenter from '@/components/leftCenter';
+import LeftBottomPlus from '@/components/leftBottomPlus';
+export default {
+  name: 'App',
+  components: {
+    // BigScreen,
+    // LeftCenter,
+    LeftBottomPlus,
+  },
+};
+</script>
 
 <style lang="scss">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+  height: 100vh;
+  width: 100vw;
+  background-color: #fdfdfd;
 }
 </style>

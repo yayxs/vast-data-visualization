@@ -1,6 +1,6 @@
 {
   "name": "vdv",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -12,7 +12,9 @@
     "core-js": "^3.6.5",
     "echarts": "^5.1.2",
     "glob": "^7.1.7",
+    "highcharts": "^9.1.2",
     "vue": "^2.6.11",
+    "vue-highcharts": "^0.2.0",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
   },
